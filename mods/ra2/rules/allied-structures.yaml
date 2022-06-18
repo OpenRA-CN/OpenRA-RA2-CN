@@ -774,9 +774,9 @@ nasam:
 		LocalOffset: 500,200,900, 500,-200,900
 	BodyOrientation:
 		QuantizedFacings: 16
-	RenderVoxels:
+	RenderModels:
 		NormalsPalette: ts-normals
-	WithVoxelTurret:
+	WIthModelTurret:
 		RequiresCondition: !build-incomplete
 	WithRangeCircle:
 		Range: 12c0
@@ -830,11 +830,11 @@ gtgcan:
 		LocalOffset: 1792,0,1280
 	BodyOrientation:
 		QuantizedFacings: 16
-	RenderVoxels:
+	RenderModels:
 		NormalsPalette: ts-normals
-	WithVoxelTurret:
+	WIthModelTurret:
 		RequiresCondition: !build-incomplete
-	WithVoxelBarrel:
+	WIthModelBarrel:
 		RequiresCondition: !build-incomplete
 	AutoTarget:
 	WithMuzzleOverlay:

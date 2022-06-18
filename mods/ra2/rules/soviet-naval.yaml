@@ -35,7 +35,7 @@ sapc:
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
-	WithVoxelBody:
+	WIthModelBody:
 	RenderSprites:
 	HitShape:
 	WithCargoPipsDecoration:
@@ -110,7 +110,7 @@ sub:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
 	-MustBeDestroyed:
-	WithVoxelBody:
+	WIthModelBody:
 	RenderSprites:
 	Targetable@underwater:
 		TargetTypes: Underwater, Repair
@@ -157,7 +157,7 @@ hyd:
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
-	WithVoxelBody:
+	WIthModelBody:
 	RenderSprites:
 	HitShape:
 

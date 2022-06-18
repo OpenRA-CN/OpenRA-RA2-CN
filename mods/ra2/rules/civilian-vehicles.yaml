@@ -50,7 +50,7 @@ wini:
 	Inherits: ^CivVehicle
 	Tooltip:
 		Name: Recreational Vehicle
-	RenderVoxels:
+	RenderModels:
 		NormalsPalette: ts-normals
 
 propa:
@@ -67,14 +67,14 @@ euroc:
 	Inherits: ^CivVehicle
 	Tooltip:
 		Name: European Car
-	RenderVoxels:
+	RenderModels:
 		NormalsPalette: ts-normals
 
 cona:
 	Inherits: ^CivVehicle
 	Tooltip:
 		Name: Excavator
-	RenderVoxels:
+	RenderModels:
 		NormalsPalette: ts-normals
 
 trucka:
@@ -102,7 +102,7 @@ stang:
 	Tooltip:
 		Name: Mustang
 		GenericName: Sports Car
-	RenderVoxels:
+	RenderModels:
 		NormalsPalette: ts-normals
 
 ptruck:
@@ -114,5 +114,5 @@ taxi:
 	Inherits: ^CivVehicle
 	Tooltip:
 		Name: Taxi
-	RenderVoxels:
+	RenderModels:
 		NormalsPalette: ts-normals

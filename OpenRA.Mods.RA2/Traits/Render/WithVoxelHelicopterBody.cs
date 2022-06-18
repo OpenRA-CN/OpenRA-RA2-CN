@@ -22,7 +22,7 @@ using OpenRA.Traits;
 namespace OpenRA.Mods.RA2.Traits
 {
 	[Desc("Render an animated voxel based upon the voxel being inair.")]
-	public class WithVoxelHelicopterBodyInfo : ConditionalTraitInfo, IRenderActorPreviewVoxelsInfo,  Requires<RenderVoxelsInfo>
+	public class WithVoxelHelicopterBodyInfo : ConditionalTraitInfo, IRenderActorPreviewModelsInfo,  Requires<RenderModelsInfo>
 	{
 		public readonly string Sequence = "idle";
 
@@ -34,8 +34,8 @@ namespace OpenRA.Mods.RA2.Traits
 
 		public override object Create(ActorInitializer init) { return new WithVoxelHelicopterBody(init.Self, this); }
 
-		public IEnumerable<ModelAnimation> RenderPreviewVoxels(
-			ActorPreviewInitializer init, RenderVoxelsInfo rv, string image, Func<WRot> orientation, int facings, PaletteReference p)
+		public IEnumerable<ModelAnimation> RenderPreviewModels(
+			ActorPreviewInitializer init, RenderModelsInfo rv, string image, Func<WRot> orientation, int facings, PaletteReference p)
 		{
 			var voxel = init.World.ModelCache.GetModelSequence(image, Sequence);
 			var body = init.Actor.TraitInfo<BodyOrientationInfo>();
@@ -50,7 +50,7 @@ namespace OpenRA.Mods.RA2.Traits
 	public class WithVoxelHelicopterBody : ConditionalTrait<WithVoxelHelicopterBodyInfo>, IAutoMouseBounds, ITick, IActorPreviewInitModifier
 	{
 		readonly WithVoxelHelicopterBodyInfo info;
-		readonly RenderVoxels rv;
+		readonly RenderModels rv;
 		readonly ModelAnimation modelAnimation;
 		uint tick, frame, frames;
 
@@ -60,12 +60,12 @@ namespace OpenRA.Mods.RA2.Traits
 			this.info = info;
 
 			var body = self.Trait<BodyOrientation>();
-			rv = self.Trait<RenderVoxels>();
+			rv = self.Trait<RenderModels>();
 
 			var voxel = self.World.ModelCache.GetModelSequence(rv.Image, info.Sequence);
 			frames = voxel.Frames;
 			modelAnimation = new ModelAnimation(voxel, () => WVec.Zero,
-				() => body.QuantizeOrientation(self, self.Orientation),
+				() => body.QuantizeOrientation(self.Orientation),
 				() => IsTraitDisabled, () => frame, info.ShowShadow);
 
 			rv.Add(modelAnimation);

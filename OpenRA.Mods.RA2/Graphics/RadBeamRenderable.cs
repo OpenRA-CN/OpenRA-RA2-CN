@@ -49,11 +49,12 @@ namespace OpenRA.Mods.RA2.Graphics
 
 		public IRenderable WithZOffset(int newOffset) { return new RadBeamRenderable(pos, zOffset, sourceToTarget, width, color, amplitude, wavelength, quantizationCount); }
 
-		public IRenderable OffsetBy(WVec vec) { return new RadBeamRenderable(pos + vec, zOffset, sourceToTarget, width, color, amplitude, wavelength, quantizationCount); }
+		public IRenderable OffsetBy(in WVec vec) { return new RadBeamRenderable(pos + vec, zOffset, sourceToTarget, width, color, amplitude, wavelength, quantizationCount); }
 
 		public IRenderable AsDecoration() { return this; }
 
 		public IFinalizedRenderable PrepareRender(WorldRenderer wr) { return this; }
+		BlendMode IFinalizedRenderable.BlendMode => BlendMode.Alpha;
 		public void Render(WorldRenderer wr)
 		{
 			if (sourceToTarget == WVec.Zero)
@@ -81,7 +82,7 @@ namespace OpenRA.Mods.RA2.Graphics
 			{
 				var y = new WVec(0, 0, amplitude.Length * angle.Sin() / 1024);
 				var end = wr.Screen3DPosition(pos + y);
-				Game.Renderer.WorldRgbaColorRenderer.DrawLine(last, end, screenWidth, color);
+				Game.Renderer.WorldRgbaColorRenderer.DrawWorldLine(last, end, screenWidth, color);
 
 				pos += forwardStep; // keep moving along x axis
 				last = end;

@@ -43,7 +43,7 @@ shad:
 		IdleBehavior: Land
 		Crushes: crate
 	RenderSprites:
-	WithVoxelHelicopterBody:
+	WIthModelHelicopterBody:
 		TickRate: 1
 	Hovers@CRUISING:
 		RequiresCondition: cruising
@@ -77,7 +77,7 @@ shadhusk:
 	RevealsShroud:
 		Range: 7c0
 		Type: CenterPosition
-	RenderVoxels:
+	RenderModels:
 		Image: shad
 	BodyOrientation:
 		UseClassicPerspectiveFudge: false
@@ -126,8 +126,8 @@ zep:
 	AutoTarget:
 		ScanRadius: 7
 	RenderSprites:
-	RenderVoxels:
-	WithVoxelBody:
+	RenderModels:
+	WIthModelBody:
 	Hovers:
 		BobDistance: -10
 	Explodes:
@@ -154,7 +154,7 @@ zephusk:
 	RevealsShroud:
 		Range: 8c0
 		Type: CenterPosition
-	RenderVoxels:
+	RenderModels:
 		Image: zep
 	BodyOrientation:
 		UseClassicPerspectiveFudge: false
@@ -198,7 +198,7 @@ orca:
 	AutoTarget:
 	RenderSprites:
 		Image: falc
-	RenderVoxels:
+	RenderModels:
 		Image: falc
 	SpawnActorOnDeath:
 		Actor: orcahusk
@@ -219,7 +219,7 @@ orcahusk:
 	Aircraft:
 		TurnSpeed: 20
 		Speed: 210
-	RenderVoxels:
+	RenderModels:
 		Image: falc
 
 beag:
@@ -239,7 +239,7 @@ beag:
 		VoiceSet: BlackEagleVoice
 	RenderSprites:
 		Image: beag
-	RenderVoxels:
+	RenderModels:
 		Image: beag
 	HitShape:
 
@@ -250,7 +250,7 @@ beaghusk:
 	Aircraft:
 		TurnSpeed: 20
 		Speed: 210
-	RenderVoxels:
+	RenderModels:
 		Image: beag
 
 pdplane:
@@ -273,7 +273,7 @@ pdplane:
 	Armor:
 		Type: Light
 	RenderSprites:
-	WithVoxelBody:
+	WIthModelBody:
 	Cargo:
 		MaxWeight: 10
 	ParaDrop:
@@ -290,7 +290,7 @@ pdplanehusk:
 	Aircraft:
 		TurnSpeed: 20
 		Speed: 100
-	RenderVoxels:
+	RenderModels:
 		Image: pdplane
 
 hornet:
@@ -353,7 +353,7 @@ hornethusk:
 	Aircraft:
 		TurnSpeed: 20
 		Speed: 180
-	RenderVoxels:
+	RenderModels:
 		Image: hornet
 		NormalsPalette: ts-normals
 
@@ -407,7 +407,7 @@ asw:
 		LandingDistance: 8c0
 	HitShape:
 	Interactable:
-	RenderVoxels:
+	RenderModels:
 		NormalsPalette: ts-normals
 	RenderSprites:
 	Rearmable:
@@ -427,6 +427,6 @@ aswhusk:
 		TurnSpeed: 20
 		Speed: 180
 		AltitudeVelocity: 240
-	RenderVoxels:
+	RenderModels:
 		Image: asw
 		NormalsPalette: ts-normals

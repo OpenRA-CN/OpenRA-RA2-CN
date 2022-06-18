@@ -210,7 +210,9 @@ namespace OpenRA.Mods.RA2.Traits
 					return;
 
 				var spawnOffset = exit == null ? WVec.Zero : exit.Info.SpawnOffset;
-				child.Trait<IPositionable>().SetVisualPosition(child, centerPosition + spawnOffset);
+				var positionable = child.Trait<IPositionable>();
+				positionable.SetPosition(child, centerPosition + spawnOffset.Rotate(self.Orientation));
+				positionable.SetCenterPosition(child, centerPosition + spawnOffset.Rotate(self.Orientation));
 
 				var location = self.World.Map.CellContaining(centerPosition + spawnOffset);
 

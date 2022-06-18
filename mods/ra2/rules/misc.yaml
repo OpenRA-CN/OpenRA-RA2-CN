@@ -69,7 +69,7 @@ amcv.colorpicker:
 	RenderSprites:
 		Image: amcv
 		Palette: colorpicker
-	RenderVoxels:
+	RenderModels:
 		Image: amcv
 		Palette: colorpicker
 

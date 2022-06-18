@@ -34,8 +34,8 @@ amcv:
 		TransformSounds: uplace.wav
 		NoTransformNotification: BuildingCannotPlaceAudio
 	RenderSprites:
-	RenderVoxels:
-	WithVoxelBody:
+	RenderModels:
+	WIthModelBody:
 	Voiced:
 		VoiceSet: AlliedConstructionVehicleVoice
 	HitShape:
@@ -86,8 +86,8 @@ cmin:
 	GainsExperience: # can get experience, i.e. speed
 		LevelUpImage: crate-effects
 	RenderSprites: # TODO: WithHarvestOverlay relies on this, but it should actually be removed
-	RenderVoxels:
-	WithVoxelUnloadBody:
+	RenderModels:
+	WIthModelUnloadBody:
 	Voiced:
 		VoiceSet: ChronoMinerVoice
 	HitShape:
@@ -144,10 +144,10 @@ mtnk:
 	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6
-	RenderVoxels:
-	WithVoxelBody:
-	WithVoxelTurret:
-	WithVoxelBarrel:
+	RenderModels:
+	WIthModelBody:
+	WIthModelTurret:
+	WIthModelBarrel:
 	Voiced:
 		VoiceSet: AlliedVehicleVoice
 	ProducibleWithLevel:
@@ -196,9 +196,9 @@ tnkd:
 	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6
-	RenderVoxels:
+	RenderModels:
 		NormalsPalette: ts-normals
-	WithVoxelBody:
+	WIthModelBody:
 	Voiced:
 		VoiceSet: AlliedVehicleVoice
 	ProducibleWithLevel:
@@ -321,24 +321,24 @@ fv:
 	Selectable:
 		Bounds: 64, 52, 0, -6
 	RenderSprites:
-	RenderVoxels:
-	WithVoxelBody:
+	RenderModels:
+	WIthModelBody:
 	Explodes:
 		RequiresCondition: !ifv-demo
 	Explodes@demo:
 		Weapon: CRNuke
 		EmptyWeapon: CRNuke
 		RequiresCondition: ifv-demo
-	WithVoxelTurret@default:
+	WIthModelTurret@default:
 		Sequence: turret-missile
 		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-demo && !ifv-hero && !ifv-chrono
-	WithVoxelTurret@mg:
+	WIthModelTurret@mg:
 		Sequence: turret-mg
 		RequiresCondition: ifv-mg || ifv-sniper || ifv-flak || ifv-hero
-	WithVoxelTurret@engineer:
+	WIthModelTurret@engineer:
 		Sequence: turret-repair
 		RequiresCondition: ifv-repair
-	WithVoxelTurret@hitech:
+	WIthModelTurret@hitech:
 		Sequence: turret-hitech
 		RequiresCondition: ifv-tesla || ifv-deso || ifv-demo || ifv-chrono
 	Voiced:
@@ -401,7 +401,7 @@ sref:
 		Weapon: UnitExplodeSmall
 		EmptyWeapon: UnitExplodeSmall
 	RenderSprites:
-	RenderVoxels:
+	RenderModels:
 	GrantConditionOnAttack@turretcharge1:
 		Condition: turretcharge
 		RevokeDelay: 5
@@ -411,18 +411,18 @@ sref:
 	GrantConditionOnAttack@turretcharge3:
 		Condition: turretcharge
 		RevokeDelay: 15
-	WithVoxelTurret:
+	WIthModelTurret:
 		RequiresCondition: !turretcharge
-	WithVoxelTurret@stage1:
+	WIthModelTurret@stage1:
 		RequiresCondition: turretcharge == 1
 		Sequence: turret-stage1
-	WithVoxelTurret@stage2:
+	WIthModelTurret@stage2:
 		RequiresCondition: turretcharge == 2
 		Sequence: turret-stage2
-	WithVoxelTurret@stage3:
+	WIthModelTurret@stage3:
 		RequiresCondition: turretcharge == 3
 		Sequence: turret-stage3
-	WithVoxelBody:
+	WIthModelBody:
 	Voiced:
 		VoiceSet: AlliedVehicleVoice
 	ProducibleWithLevel:
@@ -489,8 +489,8 @@ mgtk:
 		Palette: terrain
 	WithMirageSpriteBody:
 		RequiresCondition: tree
-	RenderVoxels:
-	WithVoxelBody:
+	RenderModels:
+	WIthModelBody:
 		RequiresCondition: !tree
 	Voiced:
 		VoiceSet: AlliedVehicleVoice

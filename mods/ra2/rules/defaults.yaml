@@ -489,7 +489,7 @@
 
 ^VoxelLighting:
 	Inherits: ^SupportBuilding
-	RenderVoxels:
+	RenderModels:
 		Scale: 11.7
 		LightYaw: 800
 		LightPitch: 150
@@ -865,7 +865,7 @@
 	Explodes:
 		Weapon: UnitExplodeSmall
 		EmptyWeapon: UnitExplodeSmall
-	RenderVoxels:
+	RenderModels:
 		Scale: 11.7
 		LightYaw: 800
 		LightPitch: 150
@@ -904,7 +904,7 @@
 		Range: 5c0
 	Selectable:
 		Bounds: 64, 52, 0, -6
-	WithVoxelBody:
+	WIthModelBody:
 	Voiced:
 		VoiceSet: CarVoice
 	MapEditorData:
@@ -937,7 +937,7 @@
 		Voice: Attack
 	Guardable:
 	MustBeDestroyed:
-	RenderVoxels:
+	RenderModels:
 		Scale: 11.7
 		LightYaw: 800
 		LightPitch: 150
@@ -982,7 +982,7 @@
 		IdleBehavior: ReturnToBase
 	Hovers@CRUISING:
 		RequiresCondition: cruising
-	WithVoxelBody:
+	WIthModelBody:
 
 ^SpawnedPlane:
 	Inherits: ^Plane
@@ -997,13 +997,13 @@
 		Speed: 273
 
 ^Husk:
-	RenderVoxels:
+	RenderModels:
 		Scale: 11.7
 		LightYaw: 800
 		LightPitch: 150
 		LightAmbientColor: -0.5,-0.5,-0.5
 		LightDiffuseColor: 1.4,1.4,1.4
-	WithVoxelBody:
+	WIthModelBody:
 	BodyOrientation:
 		QuantizedFacings: 0
 		CameraPitch: 85
@@ -1086,7 +1086,7 @@
 	Explodes:
 		Weapon: UnitExplodeSmall
 		EmptyWeapon: UnitExplodeSmall
-	RenderVoxels:
+	RenderModels:
 		Scale: 11.7
 		LightYaw: 800
 		LightPitch: 150

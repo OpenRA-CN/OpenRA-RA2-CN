@@ -960,8 +960,8 @@ naflak:
 	WithMuzzleOverlay:
 	BodyOrientation:
 		QuantizedFacings: 16
-	RenderVoxels:
-	WithVoxelTurret:
+	RenderModels:
+	WIthModelTurret:
 		RequiresCondition: !build-incomplete
 	WithRangeCircle:
 		Range: 12c0
@@ -1067,8 +1067,8 @@ nalasr:
 	WithMuzzleOverlay:
 	BodyOrientation:
 		QuantizedFacings: 16
-	RenderVoxels:
-	WithVoxelTurret:
+	RenderModels:
+	WIthModelTurret:
 		RequiresCondition: !build-incomplete
 	WithRangeCircle:
 		Range: 6c0

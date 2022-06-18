@@ -174,13 +174,13 @@ caoutp:
 	BodyOrientation:
 		QuantizedFacings: 16
 		CameraPitch: 85
-	RenderVoxels:
+	RenderModels:
 		Scale: 11.7
 		LightYaw: 800
 		LightPitch: 150
 		LightAmbientColor: -0.5,-0.5,-0.5
 		LightDiffuseColor: 1.4,1.4,1.4
-	WithVoxelTurret:
+	WIthModelTurret:
 	WithRangeCircle:
 		Range: 12c0
 		Type: patriot

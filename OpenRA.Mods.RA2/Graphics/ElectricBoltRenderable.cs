@@ -37,15 +37,22 @@ namespace OpenRA.Mods.RA2.Graphics
 
 		public IRenderable WithPalette(PaletteReference newPalette) { return this; }
 		public IRenderable WithZOffset(int newOffset) { return new ElectricBoltRenderable(offsets, newOffset, width, color); }
-		public IRenderable OffsetBy(WVec vec) { return new ElectricBoltRenderable(offsets.Select(offset => offset + vec).ToArray(), zOffset, width, color); }
+		public IRenderable OffsetBy(in WVec vec)
+		{
+			// Lambdas can't use 'in' variables, so capture a copy for later
+			var offset = vec;
+			return new ElectricBoltRenderable(offsets.Select(o => o + offset).ToArray(), zOffset, width, color);
+		}
+
 		public IRenderable AsDecoration() { return this; }
 
 		public IFinalizedRenderable PrepareRender(WorldRenderer wr) { return this; }
+		BlendMode IFinalizedRenderable.BlendMode => BlendMode.Alpha;
 		public void Render(WorldRenderer wr)
 		{
 			var screenWidth = wr.ScreenVector(new WVec(width, WDist.Zero, WDist.Zero))[0];
 
-			Game.Renderer.WorldRgbaColorRenderer.DrawLine(offsets.Select(offset => wr.Screen3DPosition(offset)), screenWidth, color, false);
+			Game.Renderer.WorldRgbaColorRenderer.DrawWorldLine(offsets.Select(offset => wr.Screen3DPosition(offset)), screenWidth, color, false);
 		}
 
 		public void RenderDebugGeometry(WorldRenderer wr) { }
