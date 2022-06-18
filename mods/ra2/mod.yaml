@@ -268,7 +268,9 @@ SpriteSequenceFormat: ExtendedTilesetSpecificSpriteSequence
 	TilesetSuffixes:
 		SNOW: a
 
-ModelSequenceFormat: VoxelModelSequence
+ModelSequenceFormat: DefaultModelSequence
+
+MeshSequenceFormat: DefaultMeshSequence
 
 AssetBrowser:
 	SupportedExtensions: .shp, .tem, .urb, .sno
