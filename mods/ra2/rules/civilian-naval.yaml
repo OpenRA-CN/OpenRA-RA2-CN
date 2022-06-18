@@ -19,7 +19,7 @@ tug:
 		Bounds: 64, 52, 0, -6
 	RenderModels:
 		NormalsPalette: ts-normals
-	WIthModelBody:
+	WithModelBody:
 	-Voiced:
 	HitShape:
 
@@ -42,7 +42,7 @@ cruise:
 	RenderSprites:
 	Selectable:
 		Bounds: 64, 52, 0, -6
-	WIthModelBody:
+	WithModelBody:
 	-Voiced:
 	HitShape:
 

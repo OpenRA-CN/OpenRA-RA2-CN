@@ -35,7 +35,7 @@ lcrf:
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
-	WIthModelBody:
+	WithModelBody:
 	RenderSprites:
 	Voiced:
 		VoiceSet: AlliedNavalVoice
@@ -117,9 +117,9 @@ dest:
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
-	WIthModelBody@FULL:
+	WithModelBody@FULL:
 		RequiresCondition: loaded
-	WIthModelBody@EMPTY:
+	WithModelBody@EMPTY:
 		Sequence: empty
 		RequiresCondition: !loaded
 	RenderSprites:
@@ -162,7 +162,7 @@ aegis:
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
-	WIthModelBody:
+	WithModelBody:
 	RenderSprites:
 	Voiced:
 		VoiceSet: AlliedNavalVoice
@@ -286,7 +286,7 @@ carrier:
 	Explodes:
 		Weapon: UnitExplode
 		EmptyWeapon: UnitExplode
-	WIthModelBody:
+	WithModelBody:
 	RenderSprites:
 	Voiced:
 		VoiceSet: AlliedNavalVoice

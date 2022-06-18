@@ -35,7 +35,7 @@ amcv:
 		NoTransformNotification: BuildingCannotPlaceAudio
 	RenderSprites:
 	RenderModels:
-	WIthModelBody:
+	WithModelBody:
 	Voiced:
 		VoiceSet: AlliedConstructionVehicleVoice
 	HitShape:
@@ -87,7 +87,7 @@ cmin:
 		LevelUpImage: crate-effects
 	RenderSprites: # TODO: WithHarvestOverlay relies on this, but it should actually be removed
 	RenderModels:
-	WIthModelUnloadBody:
+	WithModelUnloadBody:
 	Voiced:
 		VoiceSet: ChronoMinerVoice
 	HitShape:
@@ -145,9 +145,9 @@ mtnk:
 	Selectable:
 		Bounds: 64, 52, 0, -6
 	RenderModels:
-	WIthModelBody:
-	WIthModelTurret:
-	WIthModelBarrel:
+	WithModelBody:
+	WithModelTurret:
+	WithModelBarrel:
 	Voiced:
 		VoiceSet: AlliedVehicleVoice
 	ProducibleWithLevel:
@@ -198,7 +198,7 @@ tnkd:
 		Bounds: 64, 52, 0, -6
 	RenderModels:
 		NormalsPalette: ts-normals
-	WIthModelBody:
+	WithModelBody:
 	Voiced:
 		VoiceSet: AlliedVehicleVoice
 	ProducibleWithLevel:
@@ -322,23 +322,23 @@ fv:
 		Bounds: 64, 52, 0, -6
 	RenderSprites:
 	RenderModels:
-	WIthModelBody:
+	WithModelBody:
 	Explodes:
 		RequiresCondition: !ifv-demo
 	Explodes@demo:
 		Weapon: CRNuke
 		EmptyWeapon: CRNuke
 		RequiresCondition: ifv-demo
-	WIthModelTurret@default:
+	WithModelTurret@default:
 		Sequence: turret-missile
 		RequiresCondition: !ifv-mg && !ifv-repair && !ifv-sniper && !ifv-flak && !ifv-tesla && !ifv-deso && !ifv-demo && !ifv-hero && !ifv-chrono
-	WIthModelTurret@mg:
+	WithModelTurret@mg:
 		Sequence: turret-mg
 		RequiresCondition: ifv-mg || ifv-sniper || ifv-flak || ifv-hero
-	WIthModelTurret@engineer:
+	WithModelTurret@engineer:
 		Sequence: turret-repair
 		RequiresCondition: ifv-repair
-	WIthModelTurret@hitech:
+	WithModelTurret@hitech:
 		Sequence: turret-hitech
 		RequiresCondition: ifv-tesla || ifv-deso || ifv-demo || ifv-chrono
 	Voiced:
@@ -411,18 +411,18 @@ sref:
 	GrantConditionOnAttack@turretcharge3:
 		Condition: turretcharge
 		RevokeDelay: 15
-	WIthModelTurret:
+	WithModelTurret:
 		RequiresCondition: !turretcharge
-	WIthModelTurret@stage1:
+	WithModelTurret@stage1:
 		RequiresCondition: turretcharge == 1
 		Sequence: turret-stage1
-	WIthModelTurret@stage2:
+	WithModelTurret@stage2:
 		RequiresCondition: turretcharge == 2
 		Sequence: turret-stage2
-	WIthModelTurret@stage3:
+	WithModelTurret@stage3:
 		RequiresCondition: turretcharge == 3
 		Sequence: turret-stage3
-	WIthModelBody:
+	WithModelBody:
 	Voiced:
 		VoiceSet: AlliedVehicleVoice
 	ProducibleWithLevel:
@@ -490,7 +490,7 @@ mgtk:
 	WithMirageSpriteBody:
 		RequiresCondition: tree
 	RenderModels:
-	WIthModelBody:
+	WithModelBody:
 		RequiresCondition: !tree
 	Voiced:
 		VoiceSet: AlliedVehicleVoice

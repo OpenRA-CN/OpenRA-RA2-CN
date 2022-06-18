@@ -904,7 +904,7 @@
 		Range: 5c0
 	Selectable:
 		Bounds: 64, 52, 0, -6
-	WIthModelBody:
+	WithModelBody:
 	Voiced:
 		VoiceSet: CarVoice
 	MapEditorData:
@@ -982,7 +982,7 @@
 		IdleBehavior: ReturnToBase
 	Hovers@CRUISING:
 		RequiresCondition: cruising
-	WIthModelBody:
+	WithModelBody:
 
 ^SpawnedPlane:
 	Inherits: ^Plane
@@ -1003,7 +1003,7 @@
 		LightPitch: 150
 		LightAmbientColor: -0.5,-0.5,-0.5
 		LightDiffuseColor: 1.4,1.4,1.4
-	WIthModelBody:
+	WithModelBody:
 	BodyOrientation:
 		QuantizedFacings: 0
 		CameraPitch: 85

@@ -43,7 +43,7 @@ shad:
 		IdleBehavior: Land
 		Crushes: crate
 	RenderSprites:
-	WIthModelHelicopterBody:
+	WithModelHelicopterBody:
 		TickRate: 1
 	Hovers@CRUISING:
 		RequiresCondition: cruising
@@ -127,7 +127,7 @@ zep:
 		ScanRadius: 7
 	RenderSprites:
 	RenderModels:
-	WIthModelBody:
+	WithModelBody:
 	Hovers:
 		BobDistance: -10
 	Explodes:
@@ -273,7 +273,7 @@ pdplane:
 	Armor:
 		Type: Light
 	RenderSprites:
-	WIthModelBody:
+	WithModelBody:
 	Cargo:
 		MaxWeight: 10
 	ParaDrop:

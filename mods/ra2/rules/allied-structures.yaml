@@ -776,7 +776,7 @@ nasam:
 		QuantizedFacings: 16
 	RenderModels:
 		NormalsPalette: ts-normals
-	WIthModelTurret:
+	WithModelTurret:
 		RequiresCondition: !build-incomplete
 	WithRangeCircle:
 		Range: 12c0
@@ -832,9 +832,9 @@ gtgcan:
 		QuantizedFacings: 16
 	RenderModels:
 		NormalsPalette: ts-normals
-	WIthModelTurret:
+	WithModelTurret:
 		RequiresCondition: !build-incomplete
-	WIthModelBarrel:
+	WithModelBarrel:
 		RequiresCondition: !build-incomplete
 	AutoTarget:
 	WithMuzzleOverlay:

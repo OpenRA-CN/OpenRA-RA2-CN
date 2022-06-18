@@ -180,7 +180,7 @@ caoutp:
 		LightPitch: 150
 		LightAmbientColor: -0.5,-0.5,-0.5
 		LightDiffuseColor: 1.4,1.4,1.4
-	WIthModelTurret:
+	WithModelTurret:
 	WithRangeCircle:
 		Range: 12c0
 		Type: patriot

@@ -607,7 +607,7 @@ jumpjet.husk:
 	Inherits@1: ^SpriteActor
 	WithFacingSpriteBody:
 	-RenderModels:
-	-WIthModelBody:
+	-WithModelBody:
 	Tooltip:
 		Name: Rocketeer
 	Aircraft:

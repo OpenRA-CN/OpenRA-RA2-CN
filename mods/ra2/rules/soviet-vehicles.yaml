@@ -37,7 +37,7 @@ smcv:
 		NoTransformNotification: BuildingCannotPlaceAudio
 	RenderSprites:
 	RenderModels:
-	WIthModelBody:
+	WithModelBody:
 	Voiced:
 		VoiceSet: SovietVehicleVoice
 	HitShape:
@@ -101,8 +101,8 @@ harv:
 		Palette: effect
 	RenderSprites:
 	RenderModels:
-	WIthModelTurret:
-	WIthModelUnloadBody:
+	WithModelTurret:
+	WithModelUnloadBody:
 	Voiced:
 		VoiceSet: SovietVehicleVoice
 	HitShape:
@@ -213,8 +213,8 @@ htk:
 		Offset: -280,-3,0
 	RenderSprites:
 	RenderModels:
-	WIthModelTurret:
-	WIthModelBody:
+	WithModelTurret:
+	WithModelBody:
 	Voiced:
 		VoiceSet: SovietVehicleVoice
 	ProducibleWithLevel:
@@ -276,9 +276,9 @@ htnk:
 		Bounds: 64, 52, 0, -6
 	RenderModels:
 		NormalsPalette: ts-normals
-	WIthModelBody:
-	WIthModelTurret:
-	WIthModelBarrel:
+	WithModelBody:
+	WithModelTurret:
+	WithModelBarrel:
 	Voiced:
 		VoiceSet: SovietVehicleVoice
 	ProducibleWithLevel:
@@ -333,9 +333,9 @@ apoc:
 	Selectable:
 		Bounds: 64, 52, 0, -6
 	RenderModels:
-	WIthModelBody:
-	WIthModelTurret:
-	WIthModelBarrel:
+	WithModelBody:
+	WithModelTurret:
+	WithModelBarrel:
 	Explodes:
 		Weapon: ApocExplode
 		EmptyWeapon: ApocExplode
@@ -386,8 +386,8 @@ ttnk:
 	Selectable:
 		Bounds: 64, 52, 0, -6
 	RenderModels:
-	WIthModelBody:
-	WIthModelTurret:
+	WithModelBody:
+	WithModelTurret:
 	Voiced:
 		VoiceSet: SovietVehicleVoice
 	ProducibleWithLevel:
@@ -439,7 +439,7 @@ dtruck:
 		RequiresCondition: triggered
 	RenderSprites:
 	RenderModels:
-	WIthModelBody:
+	WithModelBody:
 	VoiceAnnouncement:
 		Voice: Build
 	Voiced:

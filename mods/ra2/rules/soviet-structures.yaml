@@ -961,7 +961,7 @@ naflak:
 	BodyOrientation:
 		QuantizedFacings: 16
 	RenderModels:
-	WIthModelTurret:
+	WithModelTurret:
 		RequiresCondition: !build-incomplete
 	WithRangeCircle:
 		Range: 12c0
@@ -1068,7 +1068,7 @@ nalasr:
 	BodyOrientation:
 		QuantizedFacings: 16
 	RenderModels:
-	WIthModelTurret:
+	WithModelTurret:
 		RequiresCondition: !build-incomplete
 	WithRangeCircle:
 		Range: 6c0
