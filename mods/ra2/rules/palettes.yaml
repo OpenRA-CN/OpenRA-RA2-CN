@@ -162,6 +162,10 @@
 	VoxelNormalsPalette@ts-normals:
 		Name: ts-normals
 		Type: TiberianSun
+	PaletteFromVPL@vpl:
+		Name: vpl
+		FilePath: voxels.vpl
+		AllowModifiers: true
 	MenuPaletteEffect:
 	PaletteFromPaletteWithAlpha@effect75alpha:
 		Name: effect75alpha

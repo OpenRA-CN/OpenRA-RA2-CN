@@ -110,52 +110,59 @@ Assemblies:
 	ra2|OpenRA.Mods.RA2.dll
 
 ChromeLayout:
-	common|chrome/assetbrowser.yaml
-	ra2|chrome/ingame-player.yaml
-	common|chrome/mainmenu.yaml
-	common|chrome/mainmenu-prompts.yaml
-	ra2|chrome/mainmenu-prerelease-notification.yaml
-	common|chrome/ingame-infoobjectives.yaml
-	common|chrome/ingame-infostats.yaml
-	common|chrome/musicplayer.yaml
-	common|chrome/tooltips.yaml
-	common|chrome/text-notifications.yaml
 	common|chrome/ingame.yaml
-	common|chrome/ingame-observer.yaml
 	common|chrome/ingame-chat.yaml
+	ra2|chrome/ingame-transients.yaml
 	common|chrome/ingame-fmvplayer.yaml
 	common|chrome/ingame-menu.yaml
 	common|chrome/ingame-info.yaml
 	common|chrome/ingame-infoscripterror.yaml
 	common|chrome/ingame-infobriefing.yaml
-	ra2|chrome/ingame-debug.yaml
+	common|chrome/ingame-infoobjectives.yaml
+	common|chrome/ingame-infostats.yaml
+	common|chrome/ingame-info-lobby-options.yaml
+	ra2|chrome/ingame-observer.yaml
+	ra2|chrome/ingame-player.yaml
 	common|chrome/ingame-perf.yaml
+	ra2|chrome/ingame-debug.yaml
+	common|chrome/ingame-debuginfo.yaml
 	common|chrome/ingame-infochat.yaml
+	common|chrome/mainmenu.yaml
+	common|chrome/mainmenu-prompts.yaml
+	ra2|chrome/mainmenu-prerelease-notification.yaml
 	common|chrome/settings.yaml
+	common|chrome/settings-display.yaml
+	common|chrome/settings-audio.yaml
+	common|chrome/settings-input.yaml
+	ra2|chrome/settings-hotkeys.yaml
+	common|chrome/settings-advanced.yaml
 	common|chrome/credits.yaml
 	common|chrome/lobby.yaml
+	common|chrome/lobby-mappreview.yaml
 	common|chrome/lobby-players.yaml
 	common|chrome/lobby-options.yaml
 	common|chrome/lobby-music.yaml
-	common|chrome/lobby-mappreview.yaml
 	common|chrome/lobby-servers.yaml
 	common|chrome/lobby-kickdialogs.yaml
+	common|chrome/playerprofile.yaml
+	ra2|chrome/color-picker.yaml
+	common|chrome/map-chooser.yaml
 	common|chrome/multiplayer-browser.yaml
 	common|chrome/multiplayer-browserpanels.yaml
 	common|chrome/multiplayer-createserver.yaml
 	common|chrome/multiplayer-directconnect.yaml
-	common|chrome/map-chooser.yaml
 	common|chrome/connection.yaml
 	common|chrome/replaybrowser.yaml
-	common|chrome/missionbrowser.yaml
-	common|chrome/confirmation-dialogs.yaml
-	common|chrome/color-picker.yaml
-	common|chrome/dropdowns.yaml
-	common|chrome/editor.yaml
-	common|chrome/playerprofile.yaml
 	common|chrome/gamesave-browser.yaml
 	common|chrome/gamesave-loading.yaml
-	common|chrome/ingame-debuginfo.yaml
+	ra2|chrome/dropdowns.yaml
+	common|chrome/musicplayer.yaml
+	common|chrome/tooltips.yaml
+	common|chrome/assetbrowser.yaml
+	common|chrome/missionbrowser.yaml
+	common|chrome/confirmation-dialogs.yaml
+	common|chrome/editor.yaml
+	common|chrome/text-notifications.yaml
 
 Weapons:
 	ra2|weapons/bullets.yaml
