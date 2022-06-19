@@ -23,6 +23,11 @@ git submodule update --init
 
 to checkout submodule after shallow clone
 
+Or you can specify the https repsitory link (unrecommended) locally:
+```shell
+git config submodule.engine.url https://github.com/OpenRA-CN/OpenRA.git
+```
+
 # Warning
 
 EA has not endorsed and does not support this product.
