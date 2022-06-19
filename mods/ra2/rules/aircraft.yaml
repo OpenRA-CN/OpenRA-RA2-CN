@@ -43,7 +43,7 @@ shad:
 		IdleBehavior: Land
 		Crushes: crate
 	RenderSprites:
-	WithModelHelicopterBody:
+	WithVoxelHelicopterBody:
 		TickRate: 1
 	Hovers@CRUISING:
 		RequiresCondition: cruising
