@@ -119,6 +119,7 @@ ChromeLayout:
 	common|chrome/ingame-infostats.yaml
 	common|chrome/musicplayer.yaml
 	common|chrome/tooltips.yaml
+	common|chrome/text-notifications.yaml
 	common|chrome/ingame.yaml
 	common|chrome/ingame-observer.yaml
 	common|chrome/ingame-chat.yaml

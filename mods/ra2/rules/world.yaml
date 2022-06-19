@@ -198,7 +198,7 @@ World:
 	ScreenShaker:
 	BuildingInfluence:
 	ProductionQueueFromSelection:
-		ProductionPaletteWidget: PRODUCTION_PALETTE
+		ProductionPaletteWidget: PRODUCTION_TABS
 	DomainIndex:
 	SmudgeLayer@smallscorch:
 		Type: SmallScorch
@@ -626,6 +626,31 @@ World:
 			5: FiveMinutesRemaining
 			10: TenMinutesRemaining
 			20: TwentyMinutesRemaining
+	ColorPickerManager:
+		PreviewActor: amcv.colorpicker
+		PresetHues: 0.17, 0, 0.6, 0.3, 0.1, 0.5, 0.75, 0.85, 0.17, 0, 0.6, 0.3, 0.1, 0.5, 0.75, 0.85
+		PresetSaturations: 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.9, 0.45, 0.45, 0.45, 0.45, 0.45, 0.45, 0.45, 0.45
+		FactionPreviewActors:
+			random-soviets: smcv.colorpicker
+			random-psicorps: pcv.colorpicker
+			libya: smcv.colorpicker
+			cuba: smcv.colorpicker
+			iraq: smcv.colorpicker
+			russia: smcv.colorpicker
+			vietnam: smcv.colorpicker
+			chile: smcv.colorpicker
+			mexico: smcv.colorpicker
+			mongolia: smcv.colorpicker
+			psicorps: pcv.colorpicker
+			psinepal: pcv.colorpicker
+			psisouth: pcv.colorpicker
+			psitrans: pcv.colorpicker
+			psimoon: pcv.colorpicker
+			transcaucus: smcv.colorpicker
+			serbia: smcv.colorpicker
+			turkmen: smcv.colorpicker
+			tuva: smcv.colorpicker
+			russianfed: smcv.colorpicker
 
 EditorWorld:
 	Inherits: ^BaseWorld
