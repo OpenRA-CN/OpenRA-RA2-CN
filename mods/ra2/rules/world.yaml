@@ -5,8 +5,10 @@
 		VictoryMusic: score
 		DefeatMusic: score
 	ActorMap:
+	ControlGroups:
 	ScreenMap:
 	TerrainGeometryOverlay:
+	TerrainLighting:
 	TerrainRenderer:
 	DebugVisualizations:
 	Locomotor@FOOT:

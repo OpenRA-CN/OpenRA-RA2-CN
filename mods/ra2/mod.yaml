@@ -247,11 +247,17 @@ Fonts:
 		Size: 10
 		Ascender: 8
 
+DefaultOrderGenerator: UnitOrderGenerator
+
 SupportsMapsFrom: ra2
 
 SoundFormats: Aud, Wav
 
 SpriteFormats: ShpTS, TmpTS, ShpTD, PngSheet
+
+ModelFormats: Vxl
+
+MeshFormats: Mes
 
 TerrainFormat: DefaultTerrain
 

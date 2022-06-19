@@ -42,6 +42,7 @@ shad:
 		CruisingCondition: cruising
 		IdleBehavior: Land
 		Crushes: crate
+	-ChronoshiftableWithSpriteEffect:
 	RenderSprites:
 	WithVoxelHelicopterBody:
 		TickRate: 1
@@ -125,6 +126,7 @@ zep:
 		FacingTolerance: 512
 	AutoTarget:
 		ScanRadius: 7
+	-ChronoshiftableWithSpriteEffect:
 	RenderSprites:
 	RenderModels:
 	WithModelBody:
@@ -190,6 +192,7 @@ orca:
 	AttackAircraft:
 		FacingTolerance: 80
 		Voice: Attack
+	-ChronoshiftableWithSpriteEffect:
 	Voiced:
 		VoiceSet: HarrierVoice
 	AmmoPool:
@@ -337,6 +340,7 @@ hornet:
 	CarrierChild:
 		LandingDistance: 8c0
 		DamageTypes: DefaultDeath
+	-ChronoshiftableWithSpriteEffect:
 	Rearmable:
 		RearmActors: carrier
 	WithAmmoPipsDecoration:
@@ -403,6 +407,7 @@ asw:
 		Actor: aswhusk
 	-Selectable:
 	-ActorLostNotification:
+	-ChronoshiftableWithSpriteEffect:
 	CarrierChild:
 		LandingDistance: 8c0
 	HitShape:

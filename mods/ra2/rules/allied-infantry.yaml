@@ -576,6 +576,7 @@ jumpjet:
 	Hovers:
 		BobDistance: -45
 	-Crushable:
+	-ChronoshiftableWithSpriteEffect:
 	-TakeCover:
 	-Targetable:
 	-WithDeathAnimation@normal:
