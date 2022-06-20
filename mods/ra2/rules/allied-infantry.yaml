@@ -16,8 +16,8 @@ engineer:
 		Voice: Move
 	Tooltip:
 		Name: Engineer
-	Selectable:
-		Bounds: 20, 30, 0, -11
+	#Selectable:
+	#	Bounds: 20, 30, 0, -11
 	Health:
 		HP: 75
 	Passenger:
@@ -58,8 +58,8 @@ dog:
 		Voice: Move
 	Tooltip:
 		Name: Attack Dog
-	Selectable:
-		Bounds: 30, 24, 0, -5
+	#Selectable:
+	#	Bounds: 30, 24, 0, -5
 	Health:
 		HP: 100
 	Mobile:
@@ -141,8 +141,8 @@ e1:
 		Voice: Move
 	Tooltip:
 		Name: G.I.
-	Selectable:
-		Bounds: 20, 30, 0, -11
+	#Selectable:
+	#	Bounds: 20, 30, 0, -11
 	Health:
 		HP: 125
 	Mobile:
@@ -237,8 +237,8 @@ snipe:
 		BuildPaletteOrder: 80
 		Prerequisites: radar, ~infantry.england
 		Description: Special anti-infantry unit.\n  Strong vs Infantry\n  Weak vs Vehicles, Aircraft
-	Selectable:
-		Bounds: 20, 30, 0, -11
+	#Selectable:
+	#	Bounds: 20, 30, 0, -11
 	Health:
 		HP: 125
 	Passenger:
@@ -281,8 +281,8 @@ spy:
 	DisguiseTooltip:
 		Name: Spy
 		GenericName: Soldier
-	Selectable:
-		Bounds: 24, 28, -1, -8
+	#Selectable:
+	#	Bounds: 24, 28, -1, -8
 	Health:
 		HP: 25
 	RevealsShroud:
@@ -335,8 +335,8 @@ ghost:
 		Voice: Move
 	Tooltip:
 		Name: Navy SEAL
-	Selectable:
-		Bounds: 20, 30, 0, -11
+	#Selectable:
+	#	Bounds: 20, 30, 0, -11
 	Health:
 		HP: 125
 	Mobile:
@@ -483,8 +483,8 @@ tany:
 		Voice: Move
 	Tooltip:
 		Name: Tanya
-	Selectable:
-		Bounds: 20, 30, 0, -11
+	#Selectable:
+	#	Bounds: 20, 30, 0, -11
 	Health:
 		HP: 125
 	Mobile:
@@ -535,8 +535,8 @@ jumpjet:
 		AddToArmyValue: true
 	Tooltip:
 		Name: Rocketeer
-	Selectable:
-		Bounds: 20, 30, 0, -11
+	#Selectable:
+	#	Bounds: 20, 30, 0, -11
 	Health:
 		HP: 125
 	-TimedConditionBar@ChronoDisable:
@@ -624,8 +624,8 @@ jumpjet.husk:
 cleg:
 	Inherits: ^Infantry
 	Inherits@MC: ^MindControllable
-	Selectable:
-		Bounds: 20, 30, 0, -11
+	#Selectable:
+	#	Bounds: 20, 30, 0, -11
 	Tooltip:
 		Name: Chrono Legionnaire
 	Buildable:

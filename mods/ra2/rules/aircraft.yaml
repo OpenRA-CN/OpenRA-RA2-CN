@@ -4,8 +4,8 @@ shad:
 	Inherits@MC: ^MindControllable
 	Tooltip:
 		Name: Night Hawk
-	Selectable:
-		Bounds: 70,60,0,-20
+	#Selectable:
+	#	Bounds: 70,60,0,-20
 	Health:
 		HP: 175
 	Armor:
@@ -96,8 +96,8 @@ zep:
 		Queue: Vehicle
 		BuildPaletteOrder: 90
 		Prerequisites: ~naweap, natech
-	Selectable:
-		Bounds: 100,60,0,-10
+	#Selectable:
+	#	Bounds: 100,60,0,-10
 	Aircraft:
 		CruiseAltitude: 5600
 		TurnSpeed: 20
@@ -177,8 +177,8 @@ orca:
 	Aircraft:
 		TurnSpeed: 12
 		Speed: 210
-	Selectable:
-		Bounds: 30,24
+	#Selectable:
+	#	Bounds: 30,24
 	Health:
 		HP: 150
 	Armor:

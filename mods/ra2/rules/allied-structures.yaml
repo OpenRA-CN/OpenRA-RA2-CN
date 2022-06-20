@@ -9,8 +9,6 @@ gacnst:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
-	Selectable:
-		Bounds: 220, 155, 0, -20
 	Health:
 		HP: 1000
 	Armor:
@@ -90,8 +88,6 @@ gapowr:
 		BuildPaletteOrder: 10
 		Prerequisites: ~structures.allies
 		Description: Provides power for other structures.
-	Selectable:
-		Bounds: 96, 98, -2, -24
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -137,8 +133,6 @@ gapile:
 		BuildPaletteOrder: 20
 		Prerequisites: power, ~structures.allies
 		Description: Trains infantry.
-	Selectable:
-		Bounds: 134, 132, 0, -28
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -210,8 +204,6 @@ garefn:
 		BuildPaletteOrder: 30
 		Prerequisites: power, ~structures.allies
 		Description: Processes ore into credits.
-	Selectable:
-		Bounds: 176, 150, 0, -20
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -289,8 +281,6 @@ gaairc:
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3,2
-	Selectable:
-		Bounds: 142, 150, -3, -42
 	Health:
 		HP: 600
 	Armor:
@@ -386,8 +376,6 @@ gaweap:
 		BuildPaletteOrder: 40
 		Prerequisites: garefn, gapile, ~structures.allies
 		Description: Produces vehicles.
-	Selectable:
-		Bounds: 212, 158, -7, -28
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -605,8 +593,6 @@ gadept:
 		BuildPaletteOrder: 70
 		Prerequisites: gaweap, ~structures.allies
 		Description: Repairs vehicles and removes Terror Drones (for a price).
-	Selectable:
-		Bounds: 144, 88, -12, -16
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -654,8 +640,6 @@ gatech:
 		BuildPaletteOrder: 80
 		Prerequisites: radar, gaweap, ~structures.allies
 		Description: Allows deployment of advanced units.
-	Selectable:
-		Bounds: 122, 216, 0, -81
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -717,8 +701,6 @@ gapill:
 		Type: Steel
 	RevealsShroud:
 		Range: 7c0
-	Selectable:
-		Bounds: 50, 30, 0, -4
 	Armament:
 		Weapon: vulcan2
 		LocalOffset: 416,0,416
@@ -759,8 +741,6 @@ nasam:
 		Type: Steel
 	RevealsShroud:
 		Range: 7c0
-	Selectable:
-		Bounds: 46, 62, 0, -20
 	Turreted:
 		TurnSpeed: 40
 		InitialFacing: 896
@@ -812,8 +792,6 @@ gtgcan:
 		Type: Steel
 	RevealsShroud:
 		Range: 10c0
-	Selectable:
-		Bounds: 46, 62, 0, -20
 	Turreted:
 		TurnSpeed: 12
 		InitialFacing: 896
@@ -856,8 +834,6 @@ gaorep:
 		Prerequisites: garefn, gatech, ~structures.allies
 		BuildLimit: 1
 		Description: Refines all forms of income by 25%.
-	Selectable:
-		Bounds: 134, 102, -10, -21
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -890,8 +866,6 @@ gaspysat:
 		BuildPaletteOrder: 70
 		Prerequisites: gatech, ~structures.allies
 		Description: Reveals the entire battlefield.
-	Selectable:
-		Bounds: 96, 98, -4, -30
 	Valued:
 		Cost: 1500
 	Tooltip:
@@ -931,8 +905,6 @@ gagap:
 		BuildPaletteOrder: 60
 		Prerequisites: gatech, ~structures.allies
 		Description: Obscures the enemy's view with shroud.\nRequires power to operate.
-	Selectable:
-		Bounds: 50, 114, -1, -45
 	GrantConditionOnPowerState@LOWPOWER:
 		Condition: lowpower
 		ValidPowerStates: Low, Critical
@@ -961,8 +933,6 @@ gaweat:
 		Prerequisites: gatech, ~structures.allies, ~techlevel.unrestricted
 		BuildLimit: 1
 		Description: Play God with deadly weather!
-	Selectable:
-		Bounds: 116, 106, -2, -26
 	Valued:
 		Cost: 5000
 	Tooltip:
@@ -1013,8 +983,6 @@ gacsph:
 		Prerequisites: gatech, ~structures.allies, ~techlevel.unrestricted
 		Description: Allows teleporting units in a 3x3 array.
 		BuildLimit: 1
-	Selectable:
-		Bounds: 176, 110, -5, -14
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -1076,8 +1044,6 @@ atesla:
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
-	Selectable:
-		Bounds: 44, 102, 0, -40
 	Health:
 		HP: 600
 	Armor:

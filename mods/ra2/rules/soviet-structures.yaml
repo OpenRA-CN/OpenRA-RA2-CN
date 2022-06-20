@@ -9,8 +9,6 @@ nacnst:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
-	Selectable:
-		Bounds: 220, 180, 0, -35
 	ProvidesPrerequisite@soviets:
 		Prerequisite: structures.soviets
 	Health:
@@ -90,8 +88,6 @@ napowr:
 	Building:
 		Footprint: xxx xxx
 		Dimensions: 3,2
-	Selectable:
-		Bounds: 126, 94, 2, -16
 	Health:
 		HP: 750
 	Armor:
@@ -144,8 +140,6 @@ nahand:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
-	Selectable:
-		Bounds: 94, 168, 0, -58
 	Health:
 		HP: 500
 	Armor:
@@ -225,8 +219,6 @@ narefn:
 		BuildPaletteOrder: 30
 		Prerequisites: power, ~structures.soviets
 		Description: Processes ore into credits.
-	Selectable:
-		Bounds: 170, 150, -6, -33
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -296,8 +288,6 @@ naradr:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
-	Selectable:
-		Bounds: 95, 130, 0, -40
 	Health:
 		HP: 1000
 	Armor:
@@ -333,8 +323,6 @@ naweap:
 		BuildPaletteOrder: 40
 		Prerequisites: refinery, nahand, ~structures.soviets
 		Description: Produces vehicles.
-	Selectable:
-		Bounds: 196, 178, -6, -48
 	Valued:
 		Cost: 2000
 	Tooltip:
@@ -554,8 +542,6 @@ nadept:
 		BuildPaletteOrder: 70
 		Prerequisites: naweap, ~structures.soviets
 		Description: Repairs vehicles and removes Terror Drones (for a price).
-	Selectable:
-		Bounds: 156, 150, 0, -38
 	Valued:
 		Cost: 800
 	Tooltip:
@@ -612,8 +598,6 @@ nanrct:
 	Building:
 		Footprint: xxxx xxxx xxxx xxxx
 		Dimensions: 4,4
-	Selectable:
-		Bounds: 167, 130, 9, -31
 	Health:
 		HP: 1000
 	Armor:
@@ -662,8 +646,6 @@ natech:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3,3
-	Selectable:
-		Bounds: 152, 164, 0, -50
 	Health:
 		HP: 500
 	Armor:
@@ -699,8 +681,6 @@ naclon:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
-	Selectable:
-		Bounds: 108, 134, 0, -48
 	Health:
 		HP: 1000
 	Armor:
@@ -774,8 +754,6 @@ napsis:
 	Building:
 		Footprint: xx xx
 		Dimensions: 2,2
-	Selectable:
-		Bounds: 82, 150, -1, -55
 	Health:
 		HP: 750
 	Armor:
@@ -814,8 +792,6 @@ nairon:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
-	Selectable:
-		Bounds: 136, 100, 0, -20
 	Health:
 		HP: 750
 	Armor:
@@ -864,8 +840,6 @@ namisl:
 	Building:
 		Footprint: xxx xxx xxx
 		Dimensions: 3, 3
-	Selectable:
-		Bounds: 152, 104, 0, -50
 	Health:
 		HP: 1000
 	Armor:
@@ -943,8 +917,6 @@ naflak:
 		Type: Steel
 	RevealsShroud:
 		Range: 5c0
-	Selectable:
-		Bounds: 46, 62, 0, -20
 	Turreted:
 		TurnSpeed: 40
 		InitialFacing: 896
@@ -994,8 +966,6 @@ tesla:
 		Type: Steel
 	RevealsShroud:
 		Range: 8c0
-	Selectable:
-		Bounds: 44, 88, -2, -33
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, TeslaBoost
 	WithTeslaChargeOverlay:
@@ -1051,8 +1021,6 @@ nalasr:
 		Type: Steel
 	RevealsShroud:
 		Range: 7c0
-	Selectable:
-		Bounds: 50, 30, 0, -12
 	Turreted:
 		TurnSpeed: 40
 		InitialFacing: 896

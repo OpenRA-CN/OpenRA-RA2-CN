@@ -12,8 +12,8 @@ lcrf:
 		AddToArmyValue: true
 	Tooltip:
 		Name: Amphibious Transport
-	Selectable:
-		Bounds: 60, 80, 0, -6
+	#Selectable:
+	#	Bounds: 60, 80, 0, -6
 	Health:
 		HP: 300
 	Armor:
@@ -74,8 +74,8 @@ dest:
 		Speed: 90
 	RevealsShroud:
 		Range: 7c0
-	Selectable:
-		Bounds: 80, 80, 0, -6
+	#Selectable:
+	#	Bounds: 80, 80, 0, -6
 	Armament@primary:
 		Weapon: 155mm
 		FireDelay: 2
@@ -142,8 +142,8 @@ aegis:
 		AddToArmyValue: true
 	Tooltip:
 		Name: Aegis Cruiser
-	Selectable:
-		Bounds: 60, 80, 0, -6
+	#Selectable:
+	#	Bounds: 60, 80, 0, -6
 	Health:
 		HP: 800
 	Armor:
@@ -195,8 +195,8 @@ dlph:
 		Locomotor: naval
 		Voice: Move
 	SelectionDecorations:
-	Selectable:
-		Bounds: 40, 40
+	#Selectable:
+	#	Bounds: 40, 40
 	Voiced:
 		VoiceSet: DolphinVoice
 	Armament:
@@ -273,8 +273,8 @@ carrier:
 	RevealsShroud:
 		Range: 7c0
 		Type: CenterPosition
-	Selectable:
-		Bounds: 60,80,0,-6
+	#Selectable:
+	#	Bounds: 60,80,0,-6
 	Mobile:
 		TurnSpeed: 4
 		Speed: 60

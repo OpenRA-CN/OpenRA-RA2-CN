@@ -334,9 +334,8 @@
 	OwnerLostAction:
 		Action: Kill
 		DeathTypes: BulletDeath
-	SelectionDecorations:
-	Selectable:
-		Priority: 3
+	IsometricSelectable:
+		DecorationHeight: 120
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure
 	Building:
@@ -466,8 +465,6 @@
 	Inherits: ^CivBuilding
 	OwnerLostAction:
 		Action: ChangeOwner
-	Selectable:
-		Bounds: 50, 228, 0, 0
 	Building:
 		Footprint: x
 		Dimensions: 1, 1
@@ -585,6 +582,7 @@
 	WithTextControlGroupDecoration:
 	SelectionDecorations:
 	Selectable:
+		Bounds: 482, 1448, 0, -530
 	Targetable:
 		TargetTypes: Ground, Infantry, DetonateAttack, Disguise
 	WithInfantryBody:
@@ -740,7 +738,7 @@
 	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
 	Inherits@MC: ^MindControllable
 	Selectable:
-		Bounds: 20, 30, 0, -11
+		#Bounds: 20, 30, 0, -11
 	Valued:
 		Cost: 10
 	DeliversCash:
@@ -793,7 +791,7 @@
 	Mobile:
 		Speed: 40
 	Selectable:
-		Bounds: 45, 25, 0, -8
+		#Bounds: 45, 25, 0, -8
 	AttackFrontal:
 		Voice: Attack
 	DeathSounds@burned:
@@ -834,7 +832,7 @@
 		Locomotor: wheeled
 	SelectionDecorations:
 	Selectable:
-		Bounds: 32,32
+		Bounds: 1544, 2509, 0, -289
 	Targetable:
 		TargetTypes: Ground, Vehicle, DetonateAttack
 	Targetable@REPAIR:
@@ -903,7 +901,7 @@
 	RevealsShroud:
 		Range: 5c0
 	Selectable:
-		Bounds: 64, 52, 0, -6
+		#Bounds: 64, 52, 0, -6
 	WithModelBody:
 	Voiced:
 		VoiceSet: CarVoice
@@ -920,6 +918,7 @@
 		RequiresCondition: airborne
 	SelectionDecorations:
 	Selectable:
+		Bounds: 724, 1158
 	Aircraft:
 		Voice: Move
 		AirborneCondition: airborne
@@ -1058,7 +1057,7 @@
 		MovingInterval: 6
 	SelectionDecorations:
 	Selectable:
-		Bounds: 32,32
+		Bounds: 724, 1158
 	Targetable:
 		TargetTypes: Ground, Water
 	Targetable@REPAIR:

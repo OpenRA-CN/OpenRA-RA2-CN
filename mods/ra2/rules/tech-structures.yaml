@@ -1,8 +1,6 @@
 caoild:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^2x2Shape
-	Selectable:
-		Bounds: 96, 104, -2, -26
 	Building:
 		Footprint: xx xx
 		Dimensions: 2, 2
@@ -143,8 +141,6 @@ cathosp:
 caoutp:
 	Inherits: ^TechBuilding
 	Inherits@shape: ^4x3Shape
-	Selectable:
-		Bounds: 178, 180, 0, -38
 	Tooltip:
 		Name: Tech Outpost
 	Armor:
